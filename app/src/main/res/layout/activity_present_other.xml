@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PresentMe">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="@drawable/ic_back">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sfcompactdisplay_bold"
+                android:gravity="center"
+                android:text="Attendance"
+                android:textColor="#FFF" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3.2dp"
+            android:background="@android:color/holo_orange_dark" />
+    </LinearLayout>
+
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/division_card_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        app:animationDuration="300"
+        app:expandOnClick="true"
+        app:icon="@drawable/ic_file_tree"
+        app:inner_view="@layout/expanded_item_layout"
+        app:startExpanded="false"
+        app:title="Division N" />
+
+    <com.alespero.expandablecardview.ExpandableCardView
+        android:id="@+id/division_card_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        app:animationDuration="300"
+        app:expandOnClick="true"
+        app:icon="@drawable/ic_file_tree"
+        app:inner_view="@layout/expanded_item_layout"
+        app:startExpanded="false"
+        app:title="Division N" />
+
+
+</LinearLayout>

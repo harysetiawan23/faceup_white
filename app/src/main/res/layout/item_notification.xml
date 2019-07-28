@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/notification_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfcompactdisplay_bold"
+        android:paddingLeft="22dp"
+        android:paddingTop="12dp"
+        android:paddingRight="22dp"
+        android:paddingBottom="3dp"
+        android:text="Notification Title" />
+
+    <TextView
+        android:id="@+id/notification_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sfcompactdisplay_regular"
+        android:maxLines="1"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingBottom="6dp"
+        android:text="4259 4500 0000 0000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.2dp"
+        android:background="@color/cardview_dark_background" />
+
+
+</LinearLayout>

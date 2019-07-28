@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:fontFamily="@font/sfcompactdisplay_regular"
+            android:gravity="center"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at iaculis justo, sed laoreet tellus. Donec euismod est sodales, lacinia risus sit amet, interdum diam. Sed sit amet sem sit amet quam iaculis imperdiet. Ut lacus augue, suscipit vel lacus feugiat, suscipit blandit ligula. Duis sed gravida erat. Morbi ac elit sed justo maximus ultricies. Curabitur non nisi at sem mattis vehicula ac vel urna. Etiam vel sem id sapien pretium egestas. Sed ultrices mi ac elit accumsan dictum. Cras eu erat lacinia, sollicitudin neque vel, sollicitudin ante."
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:padding="22dp"
+            android:text="Copyright Santabodhi Innovation" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_weight="2"
+            android:src="@drawable/logo_black" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_weight="2" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

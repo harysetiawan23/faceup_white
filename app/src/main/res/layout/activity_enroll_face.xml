@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".ScanFace">
+
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true" />
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:background="#80000000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/camera_switch_cam"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:src="@drawable/ic_switch_camera" />
+
+        <ImageView
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@drawable/ic_round"
+            android:id="@+id/camera_take_pic"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:src="@drawable/ic_scan_face" />
+
+        <ImageView
+            android:id="@+id/camera_exit"
+            android:layout_gravity="center"
+            android:padding="20dp"
+            android:layout_width="0dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:src="@drawable/ic_cancel_music" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

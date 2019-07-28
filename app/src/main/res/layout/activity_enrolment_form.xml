@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PresentMe">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:navigationIcon="@drawable/ic_back">
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/sfcompactdisplay_bold"
+                android:gravity="center"
+                android:text="Attendance"
+                android:textColor="#FFF" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3.2dp"
+            android:background="@android:color/holo_orange_dark" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="22dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginRight="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfcompactdisplay_bold"
+                        android:paddingLeft="22dp"
+                        android:paddingBottom="12dp"
+                        android:text="Employee ID" />
+
+                    <EditText
+                        android:id="@+id/et_employee_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/bg_rounded_grey"
+                        android:editable="false"
+                        android:fontFamily="@font/sfcompactdisplay_bold"
+                        android:paddingLeft="22dp"
+                        android:paddingTop="12dp"
+                        android:paddingRight="22dp"
+                        android:paddingBottom="12dp"
+                        android:text="XXXXXXXX" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfcompactdisplay_bold"
+                        android:paddingLeft="22dp"
+                        android:paddingBottom="12dp"
+                        android:text="Employee Name" />
+
+                    <EditText
+                        android:id="@+id/et_employe_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:background="@drawable/bg_rounded_grey"
+                        android:editable="false"
+                        android:fontFamily="@font/sfcompactdisplay_bold"
+                        android:paddingLeft="22dp"
+                        android:paddingTop="12dp"
+                        android:paddingRight="22dp"
+                        android:paddingBottom="12dp"
+                        android:text="XXXXXXXX" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="22dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="16dp"
+                    android:paddingRight="12dp"
+                    android:paddingBottom="16dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="226dp"
+                        android:layout_marginBottom="12dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/test" />
+
+                    <Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:layout_gravity="bottom|center"
+                        android:background="@drawable/button_shape_false"
+                        android:text="Repeat" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="22dp"
+        android:background="@color/colorAccent"
+        android:text="Submit"
+        android:textColor="#FFF" />
+
+</FrameLayout>

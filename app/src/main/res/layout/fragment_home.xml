@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FragmentContainer.HomeFragment">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activity.MapsActivity" />
+
+
+    <LinearLayout
+        android:layout_height="310dp"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/presentMe"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/holo_orange_dark" />
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:elevation="16dp"
+                        android:src="@drawable/ic_man_user"
+                        android:tint="#FFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:elevation="6dp"
+                        android:fontFamily="@font/sfcompactdisplay_medium"
+                        android:text="Present Me"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:id="@+id/presentOther"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/holo_orange_dark" />
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:elevation="16dp"
+                        android:src="@drawable/ic_multiple_users_silhouette"
+                        android:tint="#FFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:elevation="6dp"
+                        android:fontFamily="@font/sfcompactdisplay_medium"
+                        android:text="Present Other"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/history"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/holo_orange_dark" />
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:elevation="16dp"
+                        android:src="@drawable/ic_time"
+                        android:tint="#FFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:elevation="6dp"
+                        android:fontFamily="@font/sfcompactdisplay_medium"
+                        android:gravity="center"
+                        android:text="History"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/enrolment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/colorPrimaryLight"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="3dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/holo_orange_dark" />
+
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <ImageView
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:elevation="16dp"
+                        android:src="@drawable/ic_face_scan"
+                        android:tint="#FFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:elevation="6dp"
+                        android:fontFamily="@font/sfcompactdisplay_medium"
+                        android:gravity="center"
+                        android:text="Enrolment"
+                        android:textColor="#FFF" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>
